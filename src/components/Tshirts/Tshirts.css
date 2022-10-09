@@ -17,7 +17,7 @@
 }
 .tshirtsTitle{
     background-color: rgb(52, 79, 47);
-    padding: 4% 4%;
+    padding: 4% 0%;
     margin: 0%;
     margin-right: 10px;
     color: lightseagreen;
@@ -25,6 +25,15 @@
     text-transform: uppercase;
     text-align: center;
     width: 100%;
+    animation: title infinite alternate-reverse 1s forwards linear;
+}
+@keyframes title {
+    0%{
+        background-color: rgb(204, 20, 75);
+    }
+    100%{
+        background-color: rgba(128, 255, 0, 0.384);
+    }
 }
 .reviewButton{
 margin: 10px 2px;
@@ -45,7 +54,7 @@ background-color: darkblue;
 cursor: pointer;
 }
 
-@media(max-width:800px) {
+@media(max-width:1100px) {
     .all-tshrit{
         display: grid;
         grid-template-columns: repeat(2 , 1fr);

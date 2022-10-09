@@ -50,11 +50,13 @@ if (checkStorageIsOkOrNot)  {
 }
  if(existed) {
 toast.warn("Don't select more than one item!" ,  {
-  position: "top-right",
+  position: "top-center",
   });
 } else{
 if(cart.length === 5 ) {
-  toast.warn("You can not select more than 5 tshirt")
+  toast.info("You can not select more than 5 tshirt" , {
+    position: "top-let",
+  })
 }
   }
 }

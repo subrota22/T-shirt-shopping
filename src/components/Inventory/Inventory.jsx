@@ -2,6 +2,7 @@
 import "./Inventory.css" ;
 import {TrashIcon } from '@heroicons/react/24/solid'
 import { toast } from "react-toastify";
+
 const Inventory = ({cart , removeItem , children}) => { //map , forEach , filter , find = loop // for 
 let quantity = 0 ;
 let price = 0 ;
@@ -15,9 +16,13 @@ grandTotalPrice = price + tax ;
 }
 
 if(cart.length === 2 ) {
-toast.warn("Stop I don't have enought money !!")
+toast.warn("Stop I don't have enought money !!" , {
+    position :"bottom-left"
+})
 } else if(cart.length <=  2 ) {
-toast.success("You are able to buy now !! ")
+toast.info("You are able to buy now !! " , {
+position:"top-right"
+})
 }
 
     return (
@@ -26,10 +31,10 @@ toast.success("You are able to buy now !! ")
        <p >Order Summery </p> 
        </div>
        <hr />
-       <p> Total {quantity} tshirt selected !! </p>
-       <p> Total price {price} </p>
-       <p> Tax {tax} </p>
-       <p> Grand total price {grandTotalPrice} </p>
+       <p> Total {quantity} T-shirt selected !! </p>
+       <p> Total price : {parseInt(price).toFixed(2)} </p>
+       <p> Tax : {parseInt(tax).toFixed(2)} </p>
+       <p> Grand total price : {parseInt(grandTotalPrice).toFixed(2)} </p>
        {children}
        {
         cart.map(dataGet =>  
@@ -58,13 +63,9 @@ return (
           <td>   <p>  {name }  </p> </td>
           <td>     <p>   ${price} Quantity {quantity} </p> </td>
           <td>  
-   
-              <TrashIcon className="trsicon" onClick= {() => removeItem(dataGet) }>
-                 </TrashIcon > 
-
-    
-    </td>
-            </tr>
+   <TrashIcon className="trsicon" onClick= {() => removeItem(dataGet) }></TrashIcon > 
+               </td>
+                </tr>
         </tbody>
     </table>
  

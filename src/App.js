@@ -11,7 +11,7 @@ import { productAndCart } from './components/Loaders/Loaders';
 function App() {
 const router = createBrowserRouter([
 {
-  path:"/" , element: <Main> </Main>   , children:[
+  path:"/" , loader:() => fetch("tshirts.json") , element: <Main> </Main>   , children:[
     {
       path:"/" , 
       loader: async () => fetch("tshirts.json") 
