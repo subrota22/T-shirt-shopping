@@ -1,0 +1,42 @@
+
+
+.parentDiv{
+    display: grid;
+    grid-template-columns: 4fr  2fr;
+}
+
+.textStyle{
+    color: lime;
+}
+.textStyle > a{
+    text-decoration: none;
+    color:rgb(12, 219, 91);
+}
+
+.homePage{
+    border: none;
+    width: 180px;
+    padding: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: blueviolet;
+    background-color: aqua;
+    margin: 10px;
+    border-radius: 5px;
+}
+.homePage a{
+    text-decoration: none;
+    color: rgb(207, 20, 92);
+}
+.homePage:hover{
+    cursor: pointer;
+    background-color: orange;
+    transition: background-color 1s ;
+}
+
+@media (max-width:800px ) {
+    .parentDiv{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

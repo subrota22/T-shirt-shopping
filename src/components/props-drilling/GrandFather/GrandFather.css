@@ -1,0 +1,51 @@
+
+.grandPa , .father , .sister , .brother  , .aunty , .cousin , .SpecialPerson {
+    border: 2px solid rgb(16, 52, 212) ; 
+    margin: 40px;
+    margin-left: 3%;
+    padding: 12px;
+    text-align: center;
+    color: rgb(232, 232, 240);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    font-size: 10px;
+    background-color: rgba(221, 15, 170, 0.5);
+    box-shadow:  0 0 4px 6px  rgba(137, 43, 226, 0.4);
+}
+
+.button{
+    height: 45px;
+    width: 130px;
+    display: inline-block;
+    margin: 25px 5px;
+    border: none;
+    background-color: rgb(216, 18, 183);
+    color: white;
+    font-size: 17px;
+    border-radius: 4px;
+
+}
+.button:hover{
+    cursor: pointer;
+    background-color: royalblue;
+}
+.houseStyle{
+    color: lime;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.alertMessage{
+    background-color: rgba(255, 0, 0, 0.877);
+    height: 35px;
+    width: 150px;
+    display: inline-block;
+    margin: 25px 5px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 4px;
+}

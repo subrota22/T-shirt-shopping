@@ -1,13 +1,24 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+SA+Beginner&family=Finlandica:ital,wght@1,600&family=Gentium+Book+Plus:ital,wght@0,700;1,700&family=Lato:wght@700&family=Open+Sans:ital,wght@0,300;1,400&family=PT+Serif:ital@1&family=Poppins:wght@300;500&family=Raleway:wght@200;400&family=Roboto&family=Roboto+Slab:wght@300;400&display=swap');
+body{
+  background-color: #282c34;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+  background-color: #e91dce;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: rgb(8, 43, 44);
+border-radius: 10px;
 }

@@ -1,0 +1,50 @@
+
+
+.trsicon{
+    height: 25px;
+    width: 25px;
+    color: red;
+}
+.trsicon:hover{
+    cursor: pointer ; 
+}
+.CartText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.table , tr , td , th {
+    border-collapse: collapse;
+    text-align: center;
+}
+table td{
+    width: fit-content;
+}
+tbody:nth-child(2n) {
+    background-color: rgba(231, 23, 137, 0.5);
+    color: white;
+}
+
+.orderSummery{
+    background-color: rgb(192, 22, 127);
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.orderSummeryOk{
+    background-color: rgb(50, 192, 22);
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold; 
+}
+.inventory{
+    color: aqua;
+    box-shadow:  0 0 5px 6px lightslategray;
+    padding-bottom: 10px;
+    margin: 12px 6px;
+}

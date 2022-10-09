@@ -1,0 +1,27 @@
+.header{
+    background-color: blueviolet;
+    padding: 5% 2%;
+    text-align: center;
+}
+.header a {
+    text-decoration: none;
+    margin-left: 4%;
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+}
+
+.header a:hover {
+    color: orange;
+}
+
+@media (max-width:800px){
+    .header{
+        background-color: darkblue;
+    }
+    .header a {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+}

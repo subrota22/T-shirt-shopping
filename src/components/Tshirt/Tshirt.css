@@ -1,0 +1,60 @@
+
+.tshirt-image{
+height: 210px;
+width: 220px;
+border-radius: 15px;
+margin-left: 14%;
+margin-top: -30%;
+}
+
+.tshirt-info{
+    background-color: cadetblue;
+    padding: 15px;
+    border-radius: 12px;
+    height: 200px;
+    width: 280px;
+    position: relative;
+    margin-top: 25%;
+}
+.tshirt-info:hover > .text-div {
+opacity: 1;
+transition: opacity 2s;
+}
+
+.tshirt-info:hover > .tshirt-image{
+    margin: 0%;
+}
+.tshirt-info:hover{
+height: 340px;
+transition: height 1s;
+}
+.text-div{
+    text-align: center;
+    color: darkblue;
+    font-size: 16px;
+    opacity: 0;
+}
+.add-to-cart-button{
+position: absolute;
+padding: 5%;
+bottom: 0%;
+width: 100%;
+margin-left: -50%;
+border: none;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+color: blue;
+font-size: 18px;
+background-color: rgba(62, 110, 6, 0.555);
+}
+.add-to-cart-button:hover{
+    background-color: aqua;
+    color: white;
+    cursor: pointer;
+}
+
+.icon{
+    height: 28px;
+    width: 28px; 
+    margin-left: 40%;
+}
